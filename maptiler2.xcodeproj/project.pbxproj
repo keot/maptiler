@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B3640CD148C0D8E0011504E /* libSDL_ffmpeg.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B5E91F5148C04B10059335A /* libSDL_ffmpeg.dylib */; };
 		3B3640D1148C1A9D0011504E /* libSDL_image.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3640CE148C1A9D0011504E /* libSDL_image.dylib */; };
 		3B3640D2148C1A9D0011504E /* libSDL_ttf-2.0.0.6.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3640CF148C1A9D0011504E /* libSDL_ttf-2.0.0.6.3.dylib */; };
 		3B3640D3148C1A9D0011504E /* libSDL-1.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3640D0148C1A9D0011504E /* libSDL-1.2.0.dylib */; };
+		3B3640D5148C29010011504E /* video.c in Sources */ = {isa = PBXBuildFile; fileRef = 3B3640D4148C29010011504E /* video.c */; };
+		3B3640D9148C29C10011504E /* libavcodec.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3640D7148C29C10011504E /* libavcodec.dylib */; };
+		3B3640DA148C29C10011504E /* libavformat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3640D8148C29C10011504E /* libavformat.dylib */; };
 		3B5E91B3148BFB880059335A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91A7148BFB880059335A /* Credits.rtf */; };
 		3B5E91B4148BFB880059335A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91A9148BFB880059335A /* InfoPlist.strings */; };
 		3B5E91B5148BFB880059335A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91AB148BFB880059335A /* MainMenu.xib */; };
@@ -64,7 +66,6 @@
 		3B5EB230148C052D0059335A /* gazetrace.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91F0148C04B10059335A /* gazetrace.png */; };
 		3B5EB231148C052D0059335A /* Helvetica.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91F1148C04B10059335A /* Helvetica.ttf */; };
 		3B5EB232148C052D0059335A /* introduction.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91F2148C04B10059335A /* introduction.m4v */; };
-		3B5EB235148C052D0059335A /* libSDL_ffmpeg.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5E91F5148C04B10059335A /* libSDL_ffmpeg.dylib */; };
 		3B5EB236148C052D0059335A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E91F6148C04B10059335A /* main.c */; };
 		3B5EB237148C052D0059335A /* progress.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91F7148C04B10059335A /* progress.png */; };
 		3B5EB238148C052D0059335A /* sdl_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E91F9148C04B10059335A /* sdl_helper.c */; };
@@ -8262,7 +8263,7 @@
 		3B5ED238148C05310059335A /* F-6-tile-0538.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B5EB1FE148C05290059335A /* F-6-tile-0538.png */; };
 		3B5ED239148C05310059335A /* F-6-tile-0539.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B5EB1FF148C05290059335A /* F-6-tile-0539.png */; };
 		3B5ED23A148C05310059335A /* tiles.c in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EB200148C05290059335A /* tiles.c */; };
-		3B5ED23B148C05310059335A /* video.c in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EB202148C05290059335A /* video.c */; };
+		3B5ED23B148C05310059335A /* video.cold in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EB202148C05290059335A /* video.cold */; };
 		3B5ED240148C08D70059335A /* libconfig.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5ED23F148C08D70059335A /* libconfig.9.dylib */; };
 		9C93E39613942B5A0096FAB3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C93E39513942B5A0096FAB3 /* Cocoa.framework */; };
 		9C93E3BB13942F620096FAB3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C93E3BA13942F620096FAB3 /* OpenGL.framework */; };
@@ -8275,7 +8276,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3B3640CD148C0D8E0011504E /* libSDL_ffmpeg.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8288,6 +8288,10 @@
 		3B3640CE148C1A9D0011504E /* libSDL_image.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSDL_image.dylib; path = ../../../../usr/local/lib/libSDL_image.dylib; sourceTree = "<group>"; };
 		3B3640CF148C1A9D0011504E /* libSDL_ttf-2.0.0.6.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL_ttf-2.0.0.6.3.dylib"; path = "../../../../usr/local/Cellar/sdl_ttf/2.0.9/lib/libSDL_ttf-2.0.0.6.3.dylib"; sourceTree = "<group>"; };
 		3B3640D0148C1A9D0011504E /* libSDL-1.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL-1.2.0.dylib"; path = "../../../../usr/local/lib/libSDL-1.2.0.dylib"; sourceTree = "<group>"; };
+		3B3640D4148C29010011504E /* video.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = video.c; sourceTree = "<group>"; };
+		3B3640D6148C29350011504E /* video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = video.h; sourceTree = "<group>"; };
+		3B3640D7148C29C10011504E /* libavcodec.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.dylib; path = ../../../../opt/local/lib/libavcodec.dylib; sourceTree = "<group>"; };
+		3B3640D8148C29C10011504E /* libavformat.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.dylib; path = ../../../../opt/local/lib/libavformat.dylib; sourceTree = "<group>"; };
 		3B5E91A8148BFB880059335A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		3B5E91AA148BFB880059335A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B5E91AC148BFB880059335A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -8351,10 +8355,8 @@
 		3B5E91F0148C04B10059335A /* gazetrace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gazetrace.png; sourceTree = "<group>"; };
 		3B5E91F1148C04B10059335A /* Helvetica.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Helvetica.ttf; sourceTree = "<group>"; };
 		3B5E91F2148C04B10059335A /* introduction.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = introduction.m4v; sourceTree = "<group>"; };
-		3B5E91F5148C04B10059335A /* libSDL_ffmpeg.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libSDL_ffmpeg.dylib; sourceTree = "<group>"; };
 		3B5E91F6148C04B10059335A /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		3B5E91F7148C04B10059335A /* progress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress.png; sourceTree = "<group>"; };
-		3B5E91F8148C04B10059335A /* SDL_ffmpeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDL_ffmpeg.h; sourceTree = "<group>"; };
 		3B5E91F9148C04B10059335A /* sdl_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sdl_helper.c; sourceTree = "<group>"; };
 		3B5E91FA148C04B10059335A /* sdl_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdl_helper.h; sourceTree = "<group>"; };
 		3B5E91FB148C04B10059335A /* spinner.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spinner.c; sourceTree = "<group>"; };
@@ -16555,8 +16557,8 @@
 		3B5EB1FF148C05290059335A /* F-6-tile-0539.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "F-6-tile-0539.png"; sourceTree = "<group>"; };
 		3B5EB200148C05290059335A /* tiles.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tiles.c; sourceTree = "<group>"; };
 		3B5EB201148C05290059335A /* tiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiles.h; sourceTree = "<group>"; };
-		3B5EB202148C05290059335A /* video.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = video.c; sourceTree = "<group>"; };
-		3B5EB203148C05290059335A /* video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = video.h; sourceTree = "<group>"; };
+		3B5EB202148C05290059335A /* video.cold */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = video.cold; sourceTree = "<group>"; };
+		3B5EB203148C05290059335A /* video.hold */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = video.hold; sourceTree = "<group>"; };
 		3B5ED23F148C08D70059335A /* libconfig.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libconfig.9.dylib; path = /opt/local/lib/libconfig.9.dylib; sourceTree = "<absolute>"; };
 		9C93E39113942B5A0096FAB3 /* maptiler2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maptiler2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C93E39513942B5A0096FAB3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -16572,28 +16574,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3640D3148C1A9D0011504E /* libSDL-1.2.0.dylib in Frameworks */,
 				3B3640D1148C1A9D0011504E /* libSDL_image.dylib in Frameworks */,
 				3B3640D2148C1A9D0011504E /* libSDL_ttf-2.0.0.6.3.dylib in Frameworks */,
-				3B3640D3148C1A9D0011504E /* libSDL-1.2.0.dylib in Frameworks */,
 				3B5ED240148C08D70059335A /* libconfig.9.dylib in Frameworks */,
+				3B3640D9148C29C10011504E /* libavcodec.dylib in Frameworks */,
+				3B3640DA148C29C10011504E /* libavformat.dylib in Frameworks */,
 				9C93E3BB13942F620096FAB3 /* OpenGL.framework in Frameworks */,
 				9C93E39613942B5A0096FAB3 /* Cocoa.framework in Frameworks */,
-				3B5EB235148C052D0059335A /* libSDL_ffmpeg.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3B3640C1148C09750011504E /* SDL_FFMPEG */ = {
-			isa = PBXGroup;
-			children = (
-				3B5E91F8148C04B10059335A /* SDL_ffmpeg.h */,
-				3B5E91F5148C04B10059335A /* libSDL_ffmpeg.dylib */,
-			);
-			name = SDL_FFMPEG;
-			sourceTree = "<group>";
-		};
 		3B3640C2148C098F0011504E /* libConfig-hr */ = {
 			isa = PBXGroup;
 			children = (
@@ -24877,7 +24871,8 @@
 				3B5E91FE148C04B20059335A /* strings.h */,
 				3B5E9200148C04B20059335A /* text.h */,
 				3B5EB201148C05290059335A /* tiles.h */,
-				3B5EB203148C05290059335A /* video.h */,
+				3B3640D6148C29350011504E /* video.h */,
+				3B5EB203148C05290059335A /* video.hold */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -24893,7 +24888,8 @@
 				3B5E91F9148C04B10059335A /* sdl_helper.c */,
 				3B5E91FB148C04B10059335A /* spinner.c */,
 				3B5EB200148C05290059335A /* tiles.c */,
-				3B5EB202148C05290059335A /* video.c */,
+				3B5EB202148C05290059335A /* video.cold */,
+				3B3640D4148C29010011504E /* video.c */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -24918,6 +24914,8 @@
 		9C93E38613942B590096FAB3 = {
 			isa = PBXGroup;
 			children = (
+				3B3640D7148C29C10011504E /* libavcodec.dylib */,
+				3B3640D8148C29C10011504E /* libavformat.dylib */,
 				3B3640CE148C1A9D0011504E /* libSDL_image.dylib */,
 				3B3640CF148C1A9D0011504E /* libSDL_ttf-2.0.0.6.3.dylib */,
 				3B3640D0148C1A9D0011504E /* libSDL-1.2.0.dylib */,
@@ -24946,7 +24944,6 @@
 				3B3640C4148C09E40011504E /* SDL_image.framework */,
 				3B3640C5148C09E40011504E /* SDL_ttf.framework */,
 				3B3640C2148C098F0011504E /* libConfig-hr */,
-				3B3640C1148C09750011504E /* SDL_FFMPEG */,
 				9C93E3BA13942F620096FAB3 /* OpenGL.framework */,
 				9C93E3B213942B700096FAB3 /* SDL.framework */,
 				9C93E39513942B5A0096FAB3 /* Cocoa.framework */,
@@ -33276,7 +33273,8 @@
 				3B5EB239148C052D0059335A /* spinner.c in Sources */,
 				3B5EB23B148C052D0059335A /* text.c in Sources */,
 				3B5ED23A148C05310059335A /* tiles.c in Sources */,
-				3B5ED23B148C05310059335A /* video.c in Sources */,
+				3B5ED23B148C05310059335A /* video.cold in Sources */,
+				3B3640D5148C29010011504E /* video.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33346,20 +33344,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "maptiler2/maptiler2-Prefix.pch";
-				HEADER_SEARCH_PATHS = /usr/local/include/SDL;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/SDL,
+					/usr/local/include/libavcodec,
+					/usr/local/include/libavformat,
+					/usr/local/include/libavutil,
+				);
 				IBC_PLUGIN_SEARCH_PATHS = "/usr/local/include $(inherited) \"$(SRCROOT)\"";
 				INFOPLIST_FILE = "maptiler2/maptiler2-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					/usr/local/lib,
-					/usr/local/Cellar/sdl_ttf/2.0.9/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = maptiler2;
@@ -33372,20 +33375,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "maptiler2/maptiler2-Prefix.pch";
-				HEADER_SEARCH_PATHS = /usr/local/include/SDL;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/SDL,
+					/usr/local/include/libavcodec,
+					/usr/local/include/libavformat,
+					/usr/local/include/libavutil,
+				);
 				IBC_PLUGIN_SEARCH_PATHS = "/usr/local/include $(inherited) \"$(SRCROOT)\"";
 				INFOPLIST_FILE = "maptiler2/maptiler2-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					/usr/local/lib,
-					/usr/local/Cellar/sdl_ttf/2.0.9/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = maptiler2;
