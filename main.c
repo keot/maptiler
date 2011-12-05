@@ -17,7 +17,6 @@
 	#include "SDL.h"
 	#include "SDL_image/SDL_image.h"
 	#include "SDL_ttf/SDL_ttf.h"
-	#include "SDL_ffmpeg.h"
 #endif // _INC_SDL
 
 #ifndef _INC_LIBCONFIG
@@ -30,7 +29,6 @@
 #include "configuration.h"
 #include "tiles.h"
 #include "text.h"
-#include "video.h"
 #include "eyeserver.h"
 #include "experiment.h"
 #include "strings.h"
