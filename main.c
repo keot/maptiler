@@ -32,6 +32,7 @@
 #include "eyeserver.h"
 #include "experiment.h"
 #include "strings.h"
+#include "movie.h"
 
 	
 int main(int argc, char *argv[])
@@ -86,7 +87,7 @@ int main(int argc, char *argv[])
 		
 	showBillboard(ENTRANCE_TITLE, ENTRANCE_TEXT);
 	
-	//showVideo();
+	showMovie();
 	
 	SDL_Thread *load_images;
 	int load_images_return;
@@ -155,7 +156,7 @@ int main(int argc, char *argv[])
 			return 1;
 		}
 		
-		showBillboard(READY_TITLE, experiment_title);
+		//showBillboard(READY_TITLE, experiment_title);
 		
 		/* Strangest bug ever. If you substitle the temp.log string for the logfile_path char* then tile++ breaks... */
 		if (openLogfile(&eye_server.logfile, logfile_path) ) {
@@ -169,10 +170,10 @@ int main(int argc, char *argv[])
 		
 		runExperiment(experiments, i, &tile);
 		   
-		showStatement(1);
-		showStatement(2);
-		showStatement(3);
-		showStatement(4);
+		//showStatement(1);
+		//showStatement(2);
+		//showStatement(3);
+		//showStatement(4);
 		
 		logfile_ready = 0;
 		

@@ -50,6 +50,13 @@
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "VLC_PLUGIN_PATH"
+            value = "/Users/keot/dev/vlc/build/vlc_install_dir/lib/vlc/plugins"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

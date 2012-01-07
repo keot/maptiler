@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3540E814B7A618005DA588 /* introduction.mpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B3540E714B7A618005DA588 /* introduction.mpg */; };
 		3B3640D1148C1A9D0011504E /* libSDL_image.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3640CE148C1A9D0011504E /* libSDL_image.dylib */; };
 		3B3640D2148C1A9D0011504E /* libSDL_ttf-2.0.0.6.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3640CF148C1A9D0011504E /* libSDL_ttf-2.0.0.6.3.dylib */; };
 		3B3640D3148C1A9D0011504E /* libSDL-1.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3640D0148C1A9D0011504E /* libSDL-1.2.0.dylib */; };
@@ -8261,6 +8262,15 @@
 		3B5ED239148C05310059335A /* F-6-tile-0539.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B5EB1FF148C05290059335A /* F-6-tile-0539.png */; };
 		3B5ED23A148C05310059335A /* tiles.c in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EB200148C05290059335A /* tiles.c */; };
 		3B5ED240148C08D70059335A /* libconfig.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5ED23F148C08D70059335A /* libconfig.9.dylib */; };
+		3BA4BDCB148D5E7E003B1359 /* libvlc.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA4BDC9148D5E7E003B1359 /* libvlc.5.dylib */; };
+		3BA4BDCC148D5E7E003B1359 /* libvlccore.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA4BDCA148D5E7E003B1359 /* libvlccore.5.dylib */; };
+		3BA4BDCE148D5F84003B1359 /* movie.c in Sources */ = {isa = PBXBuildFile; fileRef = 3BA4BDCD148D5F84003B1359 /* movie.c */; };
+		3BC80A14149BE26800CB8C17 /* question1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BC80A0E149BE26800CB8C17 /* question1.png */; };
+		3BC80A15149BE26800CB8C17 /* question2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BC80A0F149BE26800CB8C17 /* question2.png */; };
+		3BC80A16149BE26800CB8C17 /* statement1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BC80A10149BE26800CB8C17 /* statement1.png */; };
+		3BC80A17149BE26800CB8C17 /* statement2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BC80A11149BE26800CB8C17 /* statement2.png */; };
+		3BC80A18149BE26800CB8C17 /* statement3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BC80A12149BE26800CB8C17 /* statement3.png */; };
+		3BC80A19149BE26800CB8C17 /* statement4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BC80A13149BE26800CB8C17 /* statement4.png */; };
 		9C93E39613942B5A0096FAB3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C93E39513942B5A0096FAB3 /* Cocoa.framework */; };
 		9C93E3BB13942F620096FAB3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C93E3BA13942F620096FAB3 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
@@ -8278,12 +8288,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B3540E714B7A618005DA588 /* introduction.mpg */ = {isa = PBXFileReference; lastKnownFileType = video.mpeg; path = introduction.mpg; sourceTree = "<group>"; };
 		3B3640C3148C09AE0011504E /* libconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libconfig.h; path = ../../../../opt/local/include/libconfig.h; sourceTree = "<group>"; };
 		3B3640C4148C09E40011504E /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = Library/Frameworks/SDL_image.framework; sourceTree = SDKROOT; };
 		3B3640C5148C09E40011504E /* SDL_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_ttf.framework; path = Library/Frameworks/SDL_ttf.framework; sourceTree = SDKROOT; };
-		3B3640CE148C1A9D0011504E /* libSDL_image.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSDL_image.dylib; path = ../../../../usr/local/lib/libSDL_image.dylib; sourceTree = "<group>"; };
-		3B3640CF148C1A9D0011504E /* libSDL_ttf-2.0.0.6.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL_ttf-2.0.0.6.3.dylib"; path = "../../../../usr/local/Cellar/sdl_ttf/2.0.9/lib/libSDL_ttf-2.0.0.6.3.dylib"; sourceTree = "<group>"; };
-		3B3640D0148C1A9D0011504E /* libSDL-1.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL-1.2.0.dylib"; path = "../../../../usr/local/lib/libSDL-1.2.0.dylib"; sourceTree = "<group>"; };
+		3B3640CE148C1A9D0011504E /* libSDL_image.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSDL_image.dylib; path = /usr/local/lib/libSDL_image.dylib; sourceTree = "<absolute>"; };
+		3B3640CF148C1A9D0011504E /* libSDL_ttf-2.0.0.6.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL_ttf-2.0.0.6.3.dylib"; path = "/usr/local/Cellar/sdl_ttf/2.0.9/lib/libSDL_ttf-2.0.0.6.3.dylib"; sourceTree = "<absolute>"; };
+		3B3640D0148C1A9D0011504E /* libSDL-1.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL-1.2.0.dylib"; path = "/usr/local/lib/libSDL-1.2.0.dylib"; sourceTree = "<absolute>"; };
 		3B5E91A8148BFB880059335A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		3B5E91AA148BFB880059335A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B5E91AC148BFB880059335A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -16550,6 +16561,16 @@
 		3B5EB200148C05290059335A /* tiles.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tiles.c; sourceTree = "<group>"; };
 		3B5EB201148C05290059335A /* tiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiles.h; sourceTree = "<group>"; };
 		3B5ED23F148C08D70059335A /* libconfig.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libconfig.9.dylib; path = /opt/local/lib/libconfig.9.dylib; sourceTree = "<absolute>"; };
+		3BA4BDC9148D5E7E003B1359 /* libvlc.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvlc.5.dylib; path = ../vlc/build/vlc_install_dir/lib/libvlc.5.dylib; sourceTree = "<group>"; };
+		3BA4BDCA148D5E7E003B1359 /* libvlccore.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvlccore.5.dylib; path = ../vlc/build/vlc_install_dir/lib/libvlccore.5.dylib; sourceTree = "<group>"; };
+		3BA4BDCD148D5F84003B1359 /* movie.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = movie.c; sourceTree = "<group>"; };
+		3BA4BDCF148D5FAF003B1359 /* movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movie.h; sourceTree = "<group>"; };
+		3BC80A0E149BE26800CB8C17 /* question1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question1.png; sourceTree = "<group>"; };
+		3BC80A0F149BE26800CB8C17 /* question2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question2.png; sourceTree = "<group>"; };
+		3BC80A10149BE26800CB8C17 /* statement1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statement1.png; sourceTree = "<group>"; };
+		3BC80A11149BE26800CB8C17 /* statement2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statement2.png; sourceTree = "<group>"; };
+		3BC80A12149BE26800CB8C17 /* statement3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statement3.png; sourceTree = "<group>"; };
+		3BC80A13149BE26800CB8C17 /* statement4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statement4.png; sourceTree = "<group>"; };
 		9C93E39113942B5A0096FAB3 /* maptiler2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maptiler2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C93E39513942B5A0096FAB3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9C93E39813942B5A0096FAB3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -16564,6 +16585,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA4BDCB148D5E7E003B1359 /* libvlc.5.dylib in Frameworks */,
+				3BA4BDCC148D5E7E003B1359 /* libvlccore.5.dylib in Frameworks */,
 				3B3640D1148C1A9D0011504E /* libSDL_image.dylib in Frameworks */,
 				3B3640D2148C1A9D0011504E /* libSDL_ttf-2.0.0.6.3.dylib in Frameworks */,
 				3B3640D3148C1A9D0011504E /* libSDL-1.2.0.dylib in Frameworks */,
@@ -24850,6 +24873,7 @@
 		3B5ED23C148C07B80059335A /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				3B5E9200148C04B20059335A /* text.h */,
 				3B5E91E5148C04B10059335A /* configuration.h */,
 				3B5E91E6148C04B10059335A /* constants.h */,
 				3B5E91ED148C04B10059335A /* experiment.h */,
@@ -24857,8 +24881,8 @@
 				3B5E91FA148C04B10059335A /* sdl_helper.h */,
 				3B5E91FC148C04B10059335A /* spinner.h */,
 				3B5E91FE148C04B20059335A /* strings.h */,
-				3B5E9200148C04B20059335A /* text.h */,
 				3B5EB201148C05290059335A /* tiles.h */,
+				3BA4BDCF148D5FAF003B1359 /* movie.h */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -24874,6 +24898,7 @@
 				3B5E91F9148C04B10059335A /* sdl_helper.c */,
 				3B5E91FB148C04B10059335A /* spinner.c */,
 				3B5EB200148C05290059335A /* tiles.c */,
+				3BA4BDCD148D5F84003B1359 /* movie.c */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -24881,6 +24906,12 @@
 		3B5ED23E148C084F0059335A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3BC80A0E149BE26800CB8C17 /* question1.png */,
+				3BC80A0F149BE26800CB8C17 /* question2.png */,
+				3BC80A10149BE26800CB8C17 /* statement1.png */,
+				3BC80A11149BE26800CB8C17 /* statement2.png */,
+				3BC80A12149BE26800CB8C17 /* statement3.png */,
+				3BC80A13149BE26800CB8C17 /* statement4.png */,
 				3B5E91E7148C04B10059335A /* corner_bl.png */,
 				3B5E91E8148C04B10059335A /* corner_br.png */,
 				3B5E91E9148C04B10059335A /* corner_tl.png */,
@@ -24898,9 +24929,9 @@
 		9C93E38613942B590096FAB3 = {
 			isa = PBXGroup;
 			children = (
-				3B3640CE148C1A9D0011504E /* libSDL_image.dylib */,
-				3B3640CF148C1A9D0011504E /* libSDL_ttf-2.0.0.6.3.dylib */,
-				3B3640D0148C1A9D0011504E /* libSDL-1.2.0.dylib */,
+				3B3540E714B7A618005DA588 /* introduction.mpg */,
+				3BA4BDC9148D5E7E003B1359 /* libvlc.5.dylib */,
+				3BA4BDCA148D5E7E003B1359 /* libvlccore.5.dylib */,
 				3B5E91BF148C04B00059335A /* Configurations */,
 				3B5ED23D148C07CF0059335A /* Sources */,
 				3B5ED23C148C07B80059335A /* Headers */,
@@ -24923,6 +24954,9 @@
 		9C93E39413942B5A0096FAB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B3640CE148C1A9D0011504E /* libSDL_image.dylib */,
+				3B3640CF148C1A9D0011504E /* libSDL_ttf-2.0.0.6.3.dylib */,
+				3B3640D0148C1A9D0011504E /* libSDL-1.2.0.dylib */,
 				3B3640C4148C09E40011504E /* SDL_image.framework */,
 				3B3640C5148C09E40011504E /* SDL_ttf.framework */,
 				3B3640C2148C098F0011504E /* libConfig-hr */,
@@ -24995,7 +25029,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3540E814B7A618005DA588 /* introduction.mpg in Resources */,
 				3B5E91B3148BFB880059335A /* Credits.rtf in Resources */,
+				3BC80A14149BE26800CB8C17 /* question1.png in Resources */,
+				3BC80A15149BE26800CB8C17 /* question2.png in Resources */,
+				3BC80A16149BE26800CB8C17 /* statement1.png in Resources */,
+				3BC80A17149BE26800CB8C17 /* statement2.png in Resources */,
+				3BC80A18149BE26800CB8C17 /* statement3.png in Resources */,
+				3BC80A19149BE26800CB8C17 /* statement4.png in Resources */,
 				3B5E91B4148BFB880059335A /* InfoPlist.strings in Resources */,
 				3B5E91B5148BFB880059335A /* MainMenu.xib in Resources */,
 				3B5EB204148C052D0059335A /* rsvp-ms-config-01.cfg in Resources */,
@@ -33255,6 +33296,7 @@
 				3B5EB239148C052D0059335A /* spinner.c in Sources */,
 				3B5EB23B148C052D0059335A /* text.c in Sources */,
 				3B5ED23A148C05310059335A /* tiles.c in Sources */,
+				3BA4BDCE148D5F84003B1359 /* movie.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33323,7 +33365,7 @@
 		9C93E3B013942B5A0096FAB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -33337,11 +33379,11 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					/usr/local/lib,
-					/usr/local/Cellar/sdl_ttf/2.0.9/lib,
+					"\"$(SRCROOT)/../vlc/build/vlc_install_dir/lib\"",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = maptiler2;
-				USER_HEADER_SEARCH_PATHS = "/usr/local/include $(inherited) \"$(SRCROOT)\"";
+				USER_HEADER_SEARCH_PATHS = "/Users/keot/dev/vlc/build/vlc_install_dir/include /usr/local/include $(inherited) \"$(SRCROOT)\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -33349,7 +33391,7 @@
 		9C93E3B113942B5A0096FAB3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -33363,11 +33405,11 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					/usr/local/lib,
-					/usr/local/Cellar/sdl_ttf/2.0.9/lib,
+					"\"$(SRCROOT)/../vlc/build/vlc_install_dir/lib\"",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = maptiler2;
-				USER_HEADER_SEARCH_PATHS = "/usr/local/include $(inherited) \"$(SRCROOT)\"";
+				USER_HEADER_SEARCH_PATHS = "/Users/keot/dev/vlc/build/vlc_install_dir/include /usr/local/include $(inherited) \"$(SRCROOT)\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
