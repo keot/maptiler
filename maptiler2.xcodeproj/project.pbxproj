@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B3540E814B7A618005DA588 /* introduction.mpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B3540E714B7A618005DA588 /* introduction.mpg */; };
 		3B3640D1148C1A9D0011504E /* libSDL_image.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3640CE148C1A9D0011504E /* libSDL_image.dylib */; };
 		3B3640D2148C1A9D0011504E /* libSDL_ttf-2.0.0.6.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3640CF148C1A9D0011504E /* libSDL_ttf-2.0.0.6.3.dylib */; };
 		3B3640D3148C1A9D0011504E /* libSDL-1.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3640D0148C1A9D0011504E /* libSDL-1.2.0.dylib */; };
@@ -8288,7 +8287,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3B3540E714B7A618005DA588 /* introduction.mpg */ = {isa = PBXFileReference; lastKnownFileType = video.mpeg; path = introduction.mpg; sourceTree = "<group>"; };
 		3B3640C3148C09AE0011504E /* libconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libconfig.h; path = ../../../../opt/local/include/libconfig.h; sourceTree = "<group>"; };
 		3B3640C4148C09E40011504E /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = Library/Frameworks/SDL_image.framework; sourceTree = SDKROOT; };
 		3B3640C5148C09E40011504E /* SDL_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_ttf.framework; path = Library/Frameworks/SDL_ttf.framework; sourceTree = SDKROOT; };
@@ -24929,7 +24927,6 @@
 		9C93E38613942B590096FAB3 = {
 			isa = PBXGroup;
 			children = (
-				3B3540E714B7A618005DA588 /* introduction.mpg */,
 				3BA4BDC9148D5E7E003B1359 /* libvlc.5.dylib */,
 				3BA4BDCA148D5E7E003B1359 /* libvlccore.5.dylib */,
 				3B5E91BF148C04B00059335A /* Configurations */,
@@ -25029,7 +25026,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B3540E814B7A618005DA588 /* introduction.mpg in Resources */,
 				3B5E91B3148BFB880059335A /* Credits.rtf in Resources */,
 				3BC80A14149BE26800CB8C17 /* question1.png in Resources */,
 				3BC80A15149BE26800CB8C17 /* question2.png in Resources */,

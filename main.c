@@ -170,10 +170,11 @@ int main(int argc, char *argv[])
 		
 		runExperiment(experiments, i, &tile);
 		   
-		//showStatement(1);
-		//showStatement(2);
-		//showStatement(3);
-		//showStatement(4);
+		showStatement(1); // confidence
+		showStatement(2); // challenge
+		showStatement(3); // image size
+		showStatement(4); // image rate
+        showStatement(5); // fatigue
 		
 		logfile_ready = 0;
 		
