@@ -16,18 +16,6 @@
 		3B5E91B6148BFB880059335A /* maptiler2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E91AE148BFB880059335A /* maptiler2AppDelegate.m */; };
 		3B5E91B7148BFB880059335A /* main.cppold in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E91AF148BFB880059335A /* main.cppold */; };
 		3B5E91BE148BFBA30059335A /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E91BC148BFBA30059335A /* SDLMain.m */; };
-		3B5EB204148C052D0059335A /* rsvp-ms-config-01.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91C0148C04B10059335A /* rsvp-ms-config-01.cfg */; };
-		3B5EB205148C052D0059335A /* rsvp-ms-config-02.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91C1148C04B10059335A /* rsvp-ms-config-02.cfg */; };
-		3B5EB206148C052D0059335A /* rsvp-ms-config-03.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91C2148C04B10059335A /* rsvp-ms-config-03.cfg */; };
-		3B5EB207148C052D0059335A /* rsvp-ms-config-04.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91C3148C04B10059335A /* rsvp-ms-config-04.cfg */; };
-		3B5EB208148C052D0059335A /* rsvp-ms-config-05.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91C4148C04B10059335A /* rsvp-ms-config-05.cfg */; };
-		3B5EB209148C052D0059335A /* rsvp-ms-config-06.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91C5148C04B10059335A /* rsvp-ms-config-06.cfg */; };
-		3B5EB20A148C052D0059335A /* rsvp-ms-config-07.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91C6148C04B10059335A /* rsvp-ms-config-07.cfg */; };
-		3B5EB20B148C052D0059335A /* rsvp-ms-config-08.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91C7148C04B10059335A /* rsvp-ms-config-08.cfg */; };
-		3B5EB20C148C052D0059335A /* rsvp-ms-config-09.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91C8148C04B10059335A /* rsvp-ms-config-09.cfg */; };
-		3B5EB20D148C052D0059335A /* rsvp-ms-config-10.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91C9148C04B10059335A /* rsvp-ms-config-10.cfg */; };
-		3B5EB20E148C052D0059335A /* rsvp-ms-config-11.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91CA148C04B10059335A /* rsvp-ms-config-11.cfg */; };
-		3B5EB20F148C052D0059335A /* rsvp-ms-config-12.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91CB148C04B10059335A /* rsvp-ms-config-12.cfg */; };
 		3B5EB210148C052D0059335A /* rsvp-ms-config-13.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91CC148C04B10059335A /* rsvp-ms-config-13.cfg */; };
 		3B5EB211148C052D0059335A /* rsvp-ms-config-14.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91CD148C04B10059335A /* rsvp-ms-config-14.cfg */; };
 		3B5EB212148C052D0059335A /* rsvp-ms-config-15.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E91CE148C04B10059335A /* rsvp-ms-config-15.cfg */; };
@@ -25035,18 +25023,6 @@
 				3BC80A19149BE26800CB8C17 /* statement4.png in Resources */,
 				3B5E91B4148BFB880059335A /* InfoPlist.strings in Resources */,
 				3B5E91B5148BFB880059335A /* MainMenu.xib in Resources */,
-				3B5EB204148C052D0059335A /* rsvp-ms-config-01.cfg in Resources */,
-				3B5EB205148C052D0059335A /* rsvp-ms-config-02.cfg in Resources */,
-				3B5EB206148C052D0059335A /* rsvp-ms-config-03.cfg in Resources */,
-				3B5EB207148C052D0059335A /* rsvp-ms-config-04.cfg in Resources */,
-				3B5EB208148C052D0059335A /* rsvp-ms-config-05.cfg in Resources */,
-				3B5EB209148C052D0059335A /* rsvp-ms-config-06.cfg in Resources */,
-				3B5EB20A148C052D0059335A /* rsvp-ms-config-07.cfg in Resources */,
-				3B5EB20B148C052D0059335A /* rsvp-ms-config-08.cfg in Resources */,
-				3B5EB20C148C052D0059335A /* rsvp-ms-config-09.cfg in Resources */,
-				3B5EB20D148C052D0059335A /* rsvp-ms-config-10.cfg in Resources */,
-				3B5EB20E148C052D0059335A /* rsvp-ms-config-11.cfg in Resources */,
-				3B5EB20F148C052D0059335A /* rsvp-ms-config-12.cfg in Resources */,
 				3B5EB210148C052D0059335A /* rsvp-ms-config-13.cfg in Resources */,
 				3B5EB211148C052D0059335A /* rsvp-ms-config-14.cfg in Resources */,
 				3B5EB212148C052D0059335A /* rsvp-ms-config-15.cfg in Resources */,

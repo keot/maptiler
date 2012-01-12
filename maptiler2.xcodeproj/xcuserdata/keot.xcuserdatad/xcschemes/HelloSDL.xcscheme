@@ -46,7 +46,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "../Resources/demo.cfg"
+            argument = "../Resources/configs/rsvp-ms-config-13.cfg"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

@@ -156,7 +156,7 @@ int main(int argc, char *argv[])
 			return 1;
 		}
 		
-		//showBillboard(READY_TITLE, experiment_title);
+		showBillboard(READY_TITLE, experiment_title);
 		
 		/* Strangest bug ever. If you substitle the temp.log string for the logfile_path char* then tile++ breaks... */
 		if (openLogfile(&eye_server.logfile, logfile_path) ) {
