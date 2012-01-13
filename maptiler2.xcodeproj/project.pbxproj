@@ -16581,114 +16581,7 @@
 			name = "libConfig-hr";
 			sourceTree = "<group>";
 		};
-		3B5E91A6148BFB880059335A /* Support */ = {
-			isa = PBXGroup;
-			children = (
-				3B5E91A7148BFB880059335A /* Credits.rtf */,
-				3B5E91A9148BFB880059335A /* InfoPlist.strings */,
-				3B5E91AB148BFB880059335A /* MainMenu.xib */,
-				3B5E91AD148BFB880059335A /* maptiler2AppDelegate.h */,
-				3B5E91AE148BFB880059335A /* maptiler2AppDelegate.m */,
-				3B5E91B1148BFB880059335A /* maptiler2-Info.plist */,
-				3B5E91B2148BFB880059335A /* maptiler2-Prefix.pch */,
-				3B5E91BA148BFBA30059335A /* README.md */,
-				3B5E91BB148BFBA30059335A /* SDLMain.h */,
-				3B5E91BC148BFBA30059335A /* SDLMain.m */,
-			);
-			name = Support;
-			path = maptiler2;
-			sourceTree = "<group>";
-		};
-		3B5E91BF148C04B00059335A /* Configurations */ = {
-			isa = PBXGroup;
-			children = (
-				3B5E91CC148C04B10059335A /* rsvp-ms-config-13.cfg */,
-				3B5E91CD148C04B10059335A /* rsvp-ms-config-14.cfg */,
-				3B5E91CE148C04B10059335A /* rsvp-ms-config-15.cfg */,
-				3B5E91CF148C04B10059335A /* rsvp-ms-config-16.cfg */,
-				3B5E91D0148C04B10059335A /* rsvp-ms-config-17.cfg */,
-				3B5E91D1148C04B10059335A /* rsvp-ms-config-18.cfg */,
-				3B5E91D2148C04B10059335A /* rsvp-ms-config-19.cfg */,
-				3B5E91D3148C04B10059335A /* rsvp-ms-config-20.cfg */,
-				3B5E91D4148C04B10059335A /* rsvp-ms-config-21.cfg */,
-				3B5E91D5148C04B10059335A /* rsvp-ms-config-22.cfg */,
-				3B5E91D6148C04B10059335A /* rsvp-ms-config-23.cfg */,
-				3B5E91D7148C04B10059335A /* rsvp-ms-config-24.cfg */,
-				3B5E91D8148C04B10059335A /* rsvp-ms-config-25.cfg */,
-				3B5E91D9148C04B10059335A /* rsvp-ms-config-26.cfg */,
-				3B5E91DA148C04B10059335A /* rsvp-ms-config-27.cfg */,
-				3B5E91DB148C04B10059335A /* rsvp-ms-config-28.cfg */,
-				3B5E91DC148C04B10059335A /* rsvp-ms-config-29.cfg */,
-				3B5E91DD148C04B10059335A /* rsvp-ms-config-30.cfg */,
-				3B5E91DE148C04B10059335A /* rsvp-ms-config-31.cfg */,
-				3B5E91DF148C04B10059335A /* rsvp-ms-config-32.cfg */,
-				3B5E91E0148C04B10059335A /* rsvp-ms-config-33.cfg */,
-				3B5E91E1148C04B10059335A /* rsvp-ms-config-34.cfg */,
-				3B5E91E2148C04B10059335A /* rsvp-ms-config-35.cfg */,
-				3B5E91E3148C04B10059335A /* rsvp-ms-config-36.cfg */,
-			);
-			name = Configurations;
-			path = configs;
-			sourceTree = "<group>";
-		};
-		3B5ED23C148C07B80059335A /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				3B5E9200148C04B20059335A /* text.h */,
-				3B5E91E5148C04B10059335A /* configuration.h */,
-				3B5E91E6148C04B10059335A /* constants.h */,
-				3B5E91ED148C04B10059335A /* experiment.h */,
-				3B5E91EF148C04B10059335A /* eyeserver.h */,
-				3B5E91FA148C04B10059335A /* sdl_helper.h */,
-				3B5E91FC148C04B10059335A /* spinner.h */,
-				3B5E91FE148C04B20059335A /* strings.h */,
-				3B5EB201148C05290059335A /* tiles.h */,
-				3BA4BDCF148D5FAF003B1359 /* movie.h */,
-			);
-			name = Headers;
-			sourceTree = "<group>";
-		};
-		3B5ED23D148C07CF0059335A /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				3B5E91FF148C04B20059335A /* text.c */,
-				3B5E91E4148C04B10059335A /* configuration.c */,
-				3B5E91EC148C04B10059335A /* experiment.c */,
-				3B5E91EE148C04B10059335A /* eyeserver.c */,
-				3B5E91F6148C04B10059335A /* main.c */,
-				3B5E91F9148C04B10059335A /* sdl_helper.c */,
-				3B5E91FB148C04B10059335A /* spinner.c */,
-				3B5EB200148C05290059335A /* tiles.c */,
-				3BA4BDCD148D5F84003B1359 /* movie.c */,
-			);
-			name = Sources;
-			sourceTree = "<group>";
-		};
-		3B5ED23E148C084F0059335A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				3BD8BD9314BF3C8800705AFC /* statement5.png */,
-				3BC80A0E149BE26800CB8C17 /* question1.png */,
-				3BC80A0F149BE26800CB8C17 /* question2.png */,
-				3BC80A10149BE26800CB8C17 /* statement1.png */,
-				3BC80A11149BE26800CB8C17 /* statement2.png */,
-				3BC80A12149BE26800CB8C17 /* statement3.png */,
-				3BC80A13149BE26800CB8C17 /* statement4.png */,
-				3B5E91E7148C04B10059335A /* corner_bl.png */,
-				3B5E91E8148C04B10059335A /* corner_br.png */,
-				3B5E91E9148C04B10059335A /* corner_tl.png */,
-				3B5E91EA148C04B10059335A /* corner_tr.png */,
-				3B5E91EB148C04B10059335A /* demo.cfg */,
-				3B5E91F0148C04B10059335A /* gazetrace.png */,
-				3B5E91F1148C04B10059335A /* Helvetica.ttf */,
-				3B5E91F2148C04B10059335A /* introduction.m4v */,
-				3B5E91F7148C04B10059335A /* progress.png */,
-				3B5E91FD148C04B20059335A /* spinner.png */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		9C93E38613942B590096FAB3 = {
+		3B5BDBDD14C0850000620A5F /* Stimuli */ = {
 			isa = PBXGroup;
 			children = (
 				3BD8BD9614BF3DB700705AFC /* G-1-tile-0000.png */,
@@ -24881,8 +24774,121 @@
 				3BD8DD9114BF3E6C00705AFC /* L-6-tile-0537.png */,
 				3BD8DD9214BF3E6C00705AFC /* L-6-tile-0538.png */,
 				3BD8DD9314BF3E6C00705AFC /* L-6-tile-0539.png */,
-				3BA4BDC9148D5E7E003B1359 /* libvlc.5.dylib */,
-				3BA4BDCA148D5E7E003B1359 /* libvlccore.5.dylib */,
+			);
+			name = Stimuli;
+			sourceTree = "<group>";
+		};
+		3B5E91A6148BFB880059335A /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				3B5E91A7148BFB880059335A /* Credits.rtf */,
+				3B5E91A9148BFB880059335A /* InfoPlist.strings */,
+				3B5E91AB148BFB880059335A /* MainMenu.xib */,
+				3B5E91AD148BFB880059335A /* maptiler2AppDelegate.h */,
+				3B5E91AE148BFB880059335A /* maptiler2AppDelegate.m */,
+				3B5E91B1148BFB880059335A /* maptiler2-Info.plist */,
+				3B5E91B2148BFB880059335A /* maptiler2-Prefix.pch */,
+				3B5E91BA148BFBA30059335A /* README.md */,
+				3B5E91BB148BFBA30059335A /* SDLMain.h */,
+				3B5E91BC148BFBA30059335A /* SDLMain.m */,
+			);
+			name = Support;
+			path = maptiler2;
+			sourceTree = "<group>";
+		};
+		3B5E91BF148C04B00059335A /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				3B5E91CC148C04B10059335A /* rsvp-ms-config-13.cfg */,
+				3B5E91CD148C04B10059335A /* rsvp-ms-config-14.cfg */,
+				3B5E91CE148C04B10059335A /* rsvp-ms-config-15.cfg */,
+				3B5E91CF148C04B10059335A /* rsvp-ms-config-16.cfg */,
+				3B5E91D0148C04B10059335A /* rsvp-ms-config-17.cfg */,
+				3B5E91D1148C04B10059335A /* rsvp-ms-config-18.cfg */,
+				3B5E91D2148C04B10059335A /* rsvp-ms-config-19.cfg */,
+				3B5E91D3148C04B10059335A /* rsvp-ms-config-20.cfg */,
+				3B5E91D4148C04B10059335A /* rsvp-ms-config-21.cfg */,
+				3B5E91D5148C04B10059335A /* rsvp-ms-config-22.cfg */,
+				3B5E91D6148C04B10059335A /* rsvp-ms-config-23.cfg */,
+				3B5E91D7148C04B10059335A /* rsvp-ms-config-24.cfg */,
+				3B5E91D8148C04B10059335A /* rsvp-ms-config-25.cfg */,
+				3B5E91D9148C04B10059335A /* rsvp-ms-config-26.cfg */,
+				3B5E91DA148C04B10059335A /* rsvp-ms-config-27.cfg */,
+				3B5E91DB148C04B10059335A /* rsvp-ms-config-28.cfg */,
+				3B5E91DC148C04B10059335A /* rsvp-ms-config-29.cfg */,
+				3B5E91DD148C04B10059335A /* rsvp-ms-config-30.cfg */,
+				3B5E91DE148C04B10059335A /* rsvp-ms-config-31.cfg */,
+				3B5E91DF148C04B10059335A /* rsvp-ms-config-32.cfg */,
+				3B5E91E0148C04B10059335A /* rsvp-ms-config-33.cfg */,
+				3B5E91E1148C04B10059335A /* rsvp-ms-config-34.cfg */,
+				3B5E91E2148C04B10059335A /* rsvp-ms-config-35.cfg */,
+				3B5E91E3148C04B10059335A /* rsvp-ms-config-36.cfg */,
+			);
+			name = Configurations;
+			path = configs;
+			sourceTree = "<group>";
+		};
+		3B5ED23C148C07B80059335A /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				3B5E9200148C04B20059335A /* text.h */,
+				3B5E91E5148C04B10059335A /* configuration.h */,
+				3B5E91E6148C04B10059335A /* constants.h */,
+				3B5E91ED148C04B10059335A /* experiment.h */,
+				3B5E91EF148C04B10059335A /* eyeserver.h */,
+				3B5E91FA148C04B10059335A /* sdl_helper.h */,
+				3B5E91FC148C04B10059335A /* spinner.h */,
+				3B5E91FE148C04B20059335A /* strings.h */,
+				3B5EB201148C05290059335A /* tiles.h */,
+				3BA4BDCF148D5FAF003B1359 /* movie.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		3B5ED23D148C07CF0059335A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3B5E91FF148C04B20059335A /* text.c */,
+				3B5E91E4148C04B10059335A /* configuration.c */,
+				3B5E91EC148C04B10059335A /* experiment.c */,
+				3B5E91EE148C04B10059335A /* eyeserver.c */,
+				3B5E91F6148C04B10059335A /* main.c */,
+				3B5E91F9148C04B10059335A /* sdl_helper.c */,
+				3B5E91FB148C04B10059335A /* spinner.c */,
+				3B5EB200148C05290059335A /* tiles.c */,
+				3BA4BDCD148D5F84003B1359 /* movie.c */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		3B5ED23E148C084F0059335A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3BD8BD9314BF3C8800705AFC /* statement5.png */,
+				3BC80A0E149BE26800CB8C17 /* question1.png */,
+				3BC80A0F149BE26800CB8C17 /* question2.png */,
+				3BC80A10149BE26800CB8C17 /* statement1.png */,
+				3BC80A11149BE26800CB8C17 /* statement2.png */,
+				3BC80A12149BE26800CB8C17 /* statement3.png */,
+				3BC80A13149BE26800CB8C17 /* statement4.png */,
+				3B5E91E7148C04B10059335A /* corner_bl.png */,
+				3B5E91E8148C04B10059335A /* corner_br.png */,
+				3B5E91E9148C04B10059335A /* corner_tl.png */,
+				3B5E91EA148C04B10059335A /* corner_tr.png */,
+				3B5E91EB148C04B10059335A /* demo.cfg */,
+				3B5E91F0148C04B10059335A /* gazetrace.png */,
+				3B5E91F1148C04B10059335A /* Helvetica.ttf */,
+				3B5E91F2148C04B10059335A /* introduction.m4v */,
+				3B5E91F7148C04B10059335A /* progress.png */,
+				3B5E91FD148C04B20059335A /* spinner.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9C93E38613942B590096FAB3 = {
+			isa = PBXGroup;
+			children = (
+				3B5BDBDD14C0850000620A5F /* Stimuli */,
 				3B5E91BF148C04B00059335A /* Configurations */,
 				3B5ED23D148C07CF0059335A /* Sources */,
 				3B5ED23C148C07B80059335A /* Headers */,
@@ -24904,6 +24910,8 @@
 		9C93E39413942B5A0096FAB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3BA4BDCA148D5E7E003B1359 /* libvlccore.5.dylib */,
+				3BA4BDC9148D5E7E003B1359 /* libvlc.5.dylib */,
 				3B3640CE148C1A9D0011504E /* libSDL_image.dylib */,
 				3B3640CF148C1A9D0011504E /* libSDL_ttf-2.0.0.6.3.dylib */,
 				3B3640D0148C1A9D0011504E /* libSDL-1.2.0.dylib */,
