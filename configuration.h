@@ -7,6 +7,9 @@
  *
  */
 
+#include <stdlib.h>
+#include <string.h>
+
 #ifndef _INC_LIBCONFIG
 	#define _INC_LIBCONFIG
 	#include "libconfig.h"

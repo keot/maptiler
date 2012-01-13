@@ -315,7 +315,7 @@ int blitPreviews(experiment *experiments, unsigned int runs)
 		viewports[i].cumulative_error = 0.0f;
 		viewports[i].tile_error = fmod((60.0f * sequence_length) / viewports[i].tiles, 1.0f);
 		viewports[i].field = 0; // beginning again
-		viewports[i].base_fields = lrint(floor( ((60.0f * sequence_length) / viewports[i].tiles) ) );
+		viewports[i].base_fields = (unsigned int) lrint(floor( ((60.0f * sequence_length) / viewports[i].tiles) ) );
 		viewports[i].cur_fields = viewports[i].base_fields;
 	}
 	

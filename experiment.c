@@ -33,7 +33,7 @@ int runExperiment(experiment *exp, const unsigned int run, int *tile)
 	cumulative_error = 0.0f;
 	tile_error = fmod((60.0f * sequence_length) / tiles, 1.0f);
 	field = 0; // beginning again
-	base_fields = lrint(floor( ((60.0f * sequence_length) / tiles) ) );
+	base_fields = (unsigned int) lrint(floor( ((60.0f * sequence_length) / tiles) ) );
 	cur_fields = base_fields;
 	
 	// Display variables
@@ -55,7 +55,7 @@ int runExperiment(experiment *exp, const unsigned int run, int *tile)
 	// Tile display duration calculations
 	Uint32 tile_update_ticks;
 	Uint32 tile_duration_error_incrementor = 0;
-	const Uint32 tile_duration_base_ticks = lrint(floor(sequence_length / tiles) );
+	const Uint32 tile_duration_base_ticks = (Uint32) lrint(floor(sequence_length / tiles) );
 	Uint32 tile_duration_ticks = tile_duration_base_ticks;
 	const float tile_duration_error = (sequence_length / tiles) - tile_duration_base_ticks;
 	float tile_duration_error_accumulator = tile_duration_error;
@@ -110,7 +110,7 @@ int runExperiment(experiment *exp, const unsigned int run, int *tile)
 			tile_duration_error_accumulator += tile_duration_error;
 			
 			if (tile_duration_error_accumulator >= 1.0f) {
-				tile_duration_error_incrementor = lrint(floor(tile_duration_error_accumulator));
+				tile_duration_error_incrementor = (Uint32) lrint(floor(tile_duration_error_accumulator));
 				tile_duration_error_accumulator -= tile_duration_error_incrementor;
 			} else {
 				tile_duration_error_incrementor = 0;
@@ -118,7 +118,7 @@ int runExperiment(experiment *exp, const unsigned int run, int *tile)
 			
 			tile_duration_ticks = tile_duration_base_ticks + tile_duration_error_incrementor;
 			
-			fprintf(stderr, "Tile %03u: %03u ms (error %4.2f).\n", *tile, tile_duration_ticks, tile_duration_error_accumulator);
+			//fprintf(stderr, "Tile %03u: %03u ms (error %4.2f).\n", *tile, tile_duration_ticks, tile_duration_error_accumulator);
 		}
 		
 	} // while !terminate

@@ -87,7 +87,7 @@ int main(int argc, char *argv[])
 		
 	showBillboard(ENTRANCE_TITLE, ENTRANCE_TEXT);
 	
-	showMovie();
+	//showMovie();
 	
 	SDL_Thread *load_images;
 	int load_images_return;

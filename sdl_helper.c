@@ -22,7 +22,7 @@ void initialiseSDL(void)
 	
 	// Library setting constants
 	const Uint32 sdl_init_flags = SDL_INIT_VIDEO | SDL_INIT_AUDIO | SDL_INIT_TIMER;
-	const Uint32 sdl_display_flags = SDL_HWSURFACE | SDL_DOUBLEBUF | SDL_FULLSCREEN;
+	const Uint32 sdl_display_flags = SDL_HWSURFACE | SDL_DOUBLEBUF;//  | SDL_FULLSCREEN;
 	
 	// SDL synchronisation
 	SDL_putenv("__GL_SYNC_TO_VBLANK=1");
@@ -231,7 +231,7 @@ SDL_Surface *scaleSurface(SDL_Surface *input, const SDL_Rect size)
 	const float step_y = input->h / size.h;
 	
 	for (unsigned int x = 0; x < size.w; x++) for (unsigned int y = 0; y < size.h; y++) {
-		putPixel(output, x, y, getPixel(input, lrint(x * step_x), lrint(y * step_y) ) );
+		putPixel(output, x, y, getPixel(input, (int) lrint(x * step_x), (int) lrint(y * step_y) ) );
 	}
 	
 	SDL_FreeSurface(input);
@@ -284,7 +284,7 @@ SDL_Surface *scaleSurfaceBlended(SDL_Surface *input, const SDL_Rect size)
 	const float step_y = input->h / size.h;
 	
 	for (unsigned int x = 0; x < size.w; x++) for (unsigned int y = 0; y < size.h; y++) {
-		putPixel(output, x, y, getBlendedPixel(input, lrint(x * step_x), lrint(y * step_y), lrint( (x+1) * step_x), lrint( (y+1) * step_y) ) );
+		putPixel(output, x, y, (unsigned int) getBlendedPixel(input, (unsigned int) lrint(x * step_x), (unsigned int) lrint(y * step_y), (unsigned int) lrint( (x+1) * step_x), (unsigned int) lrint( (y+1) * step_y) ) );
 	}
 	
 	SDL_FreeSurface(input);
