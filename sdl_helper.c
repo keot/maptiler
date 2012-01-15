@@ -21,8 +21,8 @@ void initialiseSDL(void)
 	const int display_bpp = 32;
 	
 	// Library setting constants
-	const Uint32 sdl_init_flags = SDL_INIT_VIDEO | SDL_INIT_AUDIO | SDL_INIT_TIMER;
-	const Uint32 sdl_display_flags = SDL_HWSURFACE | SDL_DOUBLEBUF;//  | SDL_FULLSCREEN;
+	const Uint32 sdl_init_flags = SDL_INIT_VIDEO;
+	const Uint32 sdl_display_flags = SDL_SWSURFACE | SDL_DOUBLEBUF | SDL_FULLSCREEN;
 	
 	// SDL synchronisation
 	SDL_putenv("__GL_SYNC_TO_VBLANK=1");
