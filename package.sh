@@ -5,6 +5,7 @@ product_dir=product
 mkdir -p $product_dir
 mkdir -p $product_dir/Resources
 mkdir -p $product_dir/bin
+mkdir -p $product_dir/Logfiles
 
 echo -n "Copying files"
 

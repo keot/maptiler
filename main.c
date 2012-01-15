@@ -140,7 +140,7 @@ int main(int argc, char *argv[])
 	showBillboard(CALIBRATION_TITLE, CALIBRATION_TEXT);
 	
 	// Logfile filename
-	const char *logfile_prefix = "../Resources/rsvp-ms";
+	const char *logfile_prefix = "../Logfiles/rsvp-ms";
 	const char *logfile_postfix = ".log";
 	char logfile_path[255];
 	
