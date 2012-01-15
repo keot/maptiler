@@ -14,9 +14,9 @@
 
 #ifndef _INC_SDL
 	#define _INC_SDL
-	#include "SDL.h"
-	#include "SDL_image/SDL_image.h"
-	#include "SDL_ttf/SDL_ttf.h"
+	#include "SDL/SDL.h"
+	#include "SDL/SDL_image.h"
+	#include "SDL/SDL_ttf.h"
 #endif // _INC_SDL
 
 #ifndef _INC_LIBCONFIG
@@ -87,7 +87,7 @@ int main(int argc, char *argv[])
 		
 	showBillboard(ENTRANCE_TITLE, ENTRANCE_TEXT);
 	
-	//showMovie();
+	showMovie();
 	
 	SDL_Thread *load_images;
 	int load_images_return;
