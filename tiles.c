@@ -74,6 +74,7 @@ SDL_Surface *makeTile(SDL_Surface *image, const unsigned int seg)
 	location.w = surface->w;
 	location.h = surface->h;
 	
+	/*
 	switch (seg) {
 		case 1:
 			location.x = 0;
@@ -104,6 +105,9 @@ SDL_Surface *makeTile(SDL_Surface *image, const unsigned int seg)
 			location.y = 0;
 			break;
 	}
+	*/
+	location.x = 0;
+	location.y = 0;
 	
 	// Clear
 	SDL_FillRect(surface, NULL, SDL_MapRGB(surface->format, 128, 128, 128) ); // clear
