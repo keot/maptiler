@@ -21,6 +21,6 @@ cp -n tiles/* $product_dir/Resources
 
 echo -n "."
 
-cp -n *.png *.ttf *.mpg $product_dir/Resources
+cp -n *.png *.ttf *.mpg *.m4v $product_dir/Resources
 
 echo "done!"
