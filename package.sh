@@ -17,10 +17,10 @@ cp -r configs $product_dir/Configurations
 
 echo -n "."
 
-cp tiles/* $product_dir/Resources
+cp -n tiles/* $product_dir/Resources
 
 echo -n "."
 
-cp *.png *.ttf *.mpg $product_dir/Resources
+cp -n *.png *.ttf *.mpg $product_dir/Resources
 
 echo "done!"
