@@ -91,15 +91,30 @@ int showMovie(void)
     movie_location.h = 540;
     movie_location.x = (1024 - movie_location.w) / 2;
     movie_location.y = (768 - movie_location.h) / 2;
+ 
+ 	SDL_Event event_handler;
     
     while (!done) {
+		// Handle events
+		while (SDL_PollEvent(&event_handler) ) {
+			switch (event_handler.type) {
+				case SDL_KEYDOWN:
+				case SDL_QUIT:
+					done = 1;
+					break;
+				default:
+					break;
+			} // switch
+		} // SDL_PollEvent
+
         SDL_LockMutex(ctx.mutex);
         SDL_BlitSurface(ctx.surf, NULL, display, &movie_location);
         SDL_UnlockMutex(ctx.mutex);
         
         SDL_Flip(display);
-        SDL_Delay(10);
+        SDL_Delay(10); // Frames automagically updated, so arbitary
         
+		// End of movie quit
         if (libvlc_media_player_get_state(libvlc_media_player) == 6) {
             done = 1;
         }
