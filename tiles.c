@@ -43,7 +43,7 @@ int fillTilesets(fill_tilesets_args *args)
 		// Load tiles
 		char filename[128];
 		for (unsigned int tile = 0; tile < tiles; tile++) {
-			sprintf(filename, "../Resources/%c-%u-tile-%04u.png", map, seg, tile);
+			sprintf(filename, "../Resources/%c-%u-tile-%04u.jpg", map, seg, tile);
 			
 			tileset[run][tile] = loadImage(filename);
 			
