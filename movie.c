@@ -99,8 +99,11 @@ int showMovie(void)
 		while (SDL_PollEvent(&event_handler) ) {
 			switch (event_handler.type) {
 				case SDL_KEYDOWN:
-				case SDL_QUIT:
 					done = 1;
+					break;
+				case SDL_QUIT:
+					// should probably clean-up...
+					exit(0);
 					break;
 				default:
 					break;

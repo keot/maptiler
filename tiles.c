@@ -389,7 +389,8 @@ int blitPreviews(experiment *experiments, unsigned int runs)
 					question_keypress = 1;
 					break;
 				case SDL_QUIT:
-					terminate = 1;
+					// should probably clean-up...
+					exit(0);
 					break;
 				default:
 					break;

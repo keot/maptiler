@@ -162,7 +162,12 @@ void displayCountdownScreen(float *percentage)
 	while (!terminate) {
 		// Handle events
 		while (SDL_PollEvent(&event_handler) ) {
-			// noop required to purge events
+			switch (event_handler.type) {
+				case SDL_QUIT:
+					// should probably clean-up...
+					exit(0);
+					break;
+			} // switch
 		} // SDL_PollEvent
 		
 		// Draw spinner
