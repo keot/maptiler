@@ -87,8 +87,6 @@ int main(int argc, char *argv[])
 		
 	showBillboard(ENTRANCE_TITLE, ENTRANCE_TEXT);
 	
-	showMovie();
-	
 	SDL_Thread *load_images;
 	int load_images_return;
 	float progress = 0;
@@ -99,6 +97,8 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "SDL: Unable to create image loading thread: %s\n", SDL_GetError() );
 		return 1;
 	}
+
+	showMovie();
 
 	displayCountdownScreen(&progress);
 
