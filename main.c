@@ -111,7 +111,7 @@ int main(int argc, char *argv[])
 	
 	// Setup and spin-off server thread
 	eye_server_args eye_server;
-	const char *client_hostname = "igaze.ee.ic.ac.uk";
+	const char *client_hostname = "ee-stimuli.ee.ic.ac.uk";
 	const unsigned int port = 4444;
 	int terminate = 0;
 	int logfile_ready = 0;
