@@ -78,7 +78,7 @@ int showMovie(void)
     // Initialise VLC
     libvlc_instance = libvlc_new(vlc_argc, vlc_argv);
     
-    libvlc_media = libvlc_media_new_path(libvlc_instance, "../Resources/introduction.m4v");
+    libvlc_media = libvlc_media_new_path(libvlc_instance, "../Resources/rsvpe-introduction.m4v");
     libvlc_media_player = libvlc_media_player_new_from_media(libvlc_media);
     libvlc_media_release(libvlc_media);
     
