@@ -104,8 +104,11 @@ int showBillboard(const char *title, const char *text)
 		while (SDL_PollEvent(&event_handler) ) {
 			switch (event_handler.type) {
 				case SDL_KEYDOWN:
-				case SDL_QUIT:
 					billboard_state = close;
+					break;
+				case SDL_QUIT:
+					// should probably clean-up...
+					exit(0);
 					break;
 			}
 		}

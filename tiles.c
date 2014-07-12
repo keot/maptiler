@@ -43,7 +43,7 @@ int fillTilesets(fill_tilesets_args *args)
 		// Load tiles
 		char filename[128];
 		for (unsigned int tile = 0; tile < tiles; tile++) {
-			sprintf(filename, "../Resources/%c-%u-tile-%04u.png", map, seg, tile);
+			sprintf(filename, "../Resources/%c-%u-tile-%04u.jpg", map, seg, tile);
 			
 			tileset[run][tile] = loadImage(filename);
 			
@@ -74,6 +74,7 @@ SDL_Surface *makeTile(SDL_Surface *image, const unsigned int seg)
 	location.w = surface->w;
 	location.h = surface->h;
 	
+	/*
 	switch (seg) {
 		case 1:
 			location.x = 0;
@@ -104,6 +105,9 @@ SDL_Surface *makeTile(SDL_Surface *image, const unsigned int seg)
 			location.y = 0;
 			break;
 	}
+	*/
+	location.x = 0;
+	location.y = 0;
 	
 	// Clear
 	SDL_FillRect(surface, NULL, SDL_MapRGB(surface->format, 128, 128, 128) ); // clear
@@ -385,7 +389,8 @@ int blitPreviews(experiment *experiments, unsigned int runs)
 					question_keypress = 1;
 					break;
 				case SDL_QUIT:
-					terminate = 1;
+					// should probably clean-up...
+					exit(0);
 					break;
 				default:
 					break;

@@ -14,9 +14,9 @@
 
 #ifndef _INC_SDL
 	#define _INC_SDL
-	#include "SDL.h"
-	#include "SDL_image/SDL_image.h"
-	#include "SDL_ttf/SDL_ttf.h"
+	#include "SDL/SDL.h"
+	#include "SDL/SDL_image.h"
+	#include "SDL/SDL_ttf.h"
 #endif // _INC_SDL
 
 #ifndef _INC_LIBCONFIG
@@ -87,8 +87,6 @@ int main(int argc, char *argv[])
 		
 	showBillboard(ENTRANCE_TITLE, ENTRANCE_TEXT);
 	
-	//showMovie();
-	
 	SDL_Thread *load_images;
 	int load_images_return;
 	float progress = 0;
@@ -99,6 +97,8 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "SDL: Unable to create image loading thread: %s\n", SDL_GetError() );
 		return 1;
 	}
+
+	showMovie();
 
 	displayCountdownScreen(&progress);
 
@@ -111,7 +111,7 @@ int main(int argc, char *argv[])
 	
 	// Setup and spin-off server thread
 	eye_server_args eye_server;
-	const char *client_hostname = "igaze.ee.ic.ac.uk";
+	const char *client_hostname = "ee-stimuli.ee.ic.ac.uk";
 	const unsigned int port = 4444;
 	int terminate = 0;
 	int logfile_ready = 0;
@@ -140,7 +140,7 @@ int main(int argc, char *argv[])
 	showBillboard(CALIBRATION_TITLE, CALIBRATION_TEXT);
 	
 	// Logfile filename
-	const char *logfile_prefix = "../Resources/rsvp-ms";
+	const char *logfile_prefix = "../Logfiles/rsvp-ms";
 	const char *logfile_postfix = ".log";
 	char logfile_path[255];
 	

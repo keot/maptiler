@@ -28,17 +28,6 @@ static void unlock(void *data, void *id, void *const *p_pixels)
 {
     struct ctx *ctx = data;
     
-    /* VLC just rendered the video, but we can also render stuff */
-    uint16_t *pixels = *p_pixels;
-    int x, y;
-    
-    for(y = 10; y < 40; y++)
-        for(x = 10; x < 40; x++)
-            if(x < 13 || y < 13 || x > 36 || y > 36)
-                pixels[y * 960 + x] = 0xffff;
-            else
-                pixels[y * 540 + x] = 0x0;
-    
     SDL_UnlockSurface(ctx->surf);
     SDL_UnlockMutex(ctx->mutex);
     
@@ -63,8 +52,8 @@ int showMovie(void)
         "--no-audio", /* skip any audio track */
         "--no-xlib", /* tell VLC to not use Xlib */
         "--no-video-title-show", /* Don't overlay title at beginning */
-        "--ignore-config",
-        "--no-spu",
+        "--ignore-config"
+        //"--no-spu",
         //"-vvv",
     };
     int vlc_argc = sizeof(vlc_argv) / sizeof(*vlc_argv);
@@ -73,12 +62,12 @@ int showMovie(void)
     // SDL Structures
     SDL_Surface *display, *empty;
 	display = SDL_GetVideoSurface();
-    empty = SDL_CreateRGBSurface(SDL_SWSURFACE, 960, 540,
+    empty = SDL_CreateRGBSurface(SDL_HWSURFACE, 960, 540,
                                  32, 0, 0, 0, 0);
     SDL_Rect movie_location;
     
     
-    ctx.surf = SDL_CreateRGBSurface(SDL_SWSURFACE, 960, 540,
+    ctx.surf = SDL_CreateRGBSurface(SDL_HWSURFACE, 960, 540,
                                     24, 0xff0000, 0x00ff00, 0x0000ff, 0); // rgb
     
     ctx.mutex = SDL_CreateMutex();
@@ -89,7 +78,7 @@ int showMovie(void)
     // Initialise VLC
     libvlc_instance = libvlc_new(vlc_argc, vlc_argv);
     
-    libvlc_media = libvlc_media_new_path(libvlc_instance, "../Resources/introduction.m4v");
+    libvlc_media = libvlc_media_new_path(libvlc_instance, "../Resources/rsvpe-introduction.m4v");
     libvlc_media_player = libvlc_media_player_new_from_media(libvlc_media);
     libvlc_media_release(libvlc_media);
     
@@ -102,20 +91,36 @@ int showMovie(void)
     movie_location.h = 540;
     movie_location.x = (1024 - movie_location.w) / 2;
     movie_location.y = (768 - movie_location.h) / 2;
+ 
+ 	SDL_Event event_handler;
     
     while (!done) {
+		// Handle events
+		while (SDL_PollEvent(&event_handler) ) {
+			switch (event_handler.type) {
+				case SDL_KEYDOWN:
+					done = 1;
+					break;
+				case SDL_QUIT:
+					// should probably clean-up...
+					exit(0);
+					break;
+				default:
+					break;
+			} // switch
+		} // SDL_PollEvent
+
         SDL_LockMutex(ctx.mutex);
         SDL_BlitSurface(ctx.surf, NULL, display, &movie_location);
         SDL_UnlockMutex(ctx.mutex);
         
         SDL_Flip(display);
-        SDL_Delay(10);
+        SDL_Delay(10); // Frames automagically updated, so arbitary
         
+		// End of movie quit
         if (libvlc_media_player_get_state(libvlc_media_player) == 6) {
             done = 1;
         }
-        
-        //SDL_BlitSurface(empty, NULL, display, &movie_location);
     }
     
     libvlc_media_player_release(libvlc_media_player);
