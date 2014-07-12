@@ -10,6 +10,15 @@ _MapTiler_ is used for comparing different presentation methods for presenting i
 The code here should function on _Mac OS X_ and _Ubuntu Linux_ without modification.
 
 
+## Missing Files
+
+Some files have been removed due to licensing restrictions and to keep the size of the repository manageable. The following files may be referenced within the source code, but have been removed:
+
+* `Helvetica.ttf`: a common True-Type font
+* `tiles/*`: all the stimuli used for the experiments
+* `rsvpe-introduction.m4v`: all introduction videos
+
+
 ## License
 
-In accordance with all thesises and associated works published by [Imperial College London](http://www.imperial.ac.uk/) doctoral candidates, this work is published under a _Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported_ license. The license can be viewed in the file `CC-BY-NC-ND-3.0.txt`.
+In accordance with all theses and associated works published by [Imperial College London](http://www.imperial.ac.uk/) doctoral candidates, this work is published under a _Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported_ license. The license can be viewed in the file `CC-BY-NC-ND-3.0.txt`.
