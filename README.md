@@ -2,6 +2,8 @@
 
 _Accurate Stimuli Presentation Software_
 
+Further information is available from the [Assisting Search and Rescue through Visual Attention](http://cas.ee.ic.ac.uk/people/jpm04/asartva/) website.
+
 
 ## About
 
